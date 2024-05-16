@@ -1,0 +1,19 @@
+NO ./textures/Textura_madera.xpm
+SO ./textures/Textura_mosaico.xpm
+WE ./textures/Textura_piedra.xpm
+EA ./textures/Textura_lava.xpm
+
+F 140, 65, 30
+C 0, 255, 0
+
+011111111111
+100000000001
+100100001001
+111110011111
+111110011111
+111110N11101
+111110011111
+100000000001
+1000000000001
+100000000001
+011111111111
