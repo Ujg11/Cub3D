@@ -6,7 +6,7 @@
 /*   By: ojimenez <ojimenez@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/30 12:09:48 by ojimenez          #+#    #+#             */
-/*   Updated: 2024/04/30 12:34:48 by ojimenez         ###   ########.fr       */
+/*   Updated: 2024/05/16 16:24:30 by ojimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int	cub_destroy(t_cub *cub)
 		free(cub->mlx);
 	free(cub);
 	cub = NULL;
-	exit(EXIT_FAILURE);
+	exit(1);
 }
 
 void	destroy_textures(int i, t_cub *c)

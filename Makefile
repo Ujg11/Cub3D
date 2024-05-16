@@ -6,7 +6,7 @@
 #    By: ojimenez <ojimenez@student.42barcelona.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/13 13:54:24 by agrimald          #+#    #+#              #
-#    Updated: 2024/05/16 13:29:40 by ojimenez         ###   ########.fr        #
+#    Updated: 2024/05/16 16:29:40 by ojimenez         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ LIBFTA = -L./include/Libft -lft
 SRCDIR = src/
 OBJDIR = obj/
 
-SRC_L =	parser/main.c \
+SRC_L =	main.c \
 		parser/check_coordinates.c \
 		parser/check_map.c \
 		parser/clean.c \

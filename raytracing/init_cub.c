@@ -6,7 +6,7 @@
 /*   By: ojimenez <ojimenez@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/26 12:31:24 by ojimenez          #+#    #+#             */
-/*   Updated: 2024/05/07 12:30:43 by ojimenez         ###   ########.fr       */
+/*   Updated: 2024/05/16 16:25:23 by ojimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,7 @@ void	init_textures(t_cub *c)
 		if (!c->texture[i]->imag)
 		{
 			printf("Error al cargar las texturas\n");
-			destroy_textures(i, c);
-			cub_destroy(c);
+			exit(1);
 		}
 		c->texture[i]->addr = mlx_get_data_addr(c->texture[i]->imag,
 				&c->texture[i]->bpp, &c->texture[i]->size_l,

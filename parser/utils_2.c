@@ -6,7 +6,7 @@
 /*   By: ojimenez <ojimenez@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/10 19:31:45 by agrimald          #+#    #+#             */
-/*   Updated: 2024/05/16 13:29:18 by ojimenez         ###   ########.fr       */
+/*   Updated: 2024/05/16 16:15:32 by ojimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -127,7 +127,7 @@ int	padding_map_two(t_game *game, int rows, int cols)
 		i++;
 	}
 	if (check_fist_linecolumn(extended_map))
-		return (1);
+		return (free_extended_map(extended_map), 1);
 	free_extended_map(extended_map);
 	return (flag);
 }
