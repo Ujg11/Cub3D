@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: agrimald <agrimald@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ojimenez <ojimenez@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 17:53:55 by agrimald          #+#    #+#             */
-/*   Updated: 2024/04/25 19:05:38 by agrimald         ###   ########.fr       */
+/*   Updated: 2024/05/16 16:57:22 by ojimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ static char	search_char(char c, const char *s)
 
 static char	*copy_chars(char *dst, int len, char *src)
 {
-	char 	*dst_ptr;
+	char	*dst_ptr;
 	int		i;
 
 	i = 0;

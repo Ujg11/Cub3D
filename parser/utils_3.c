@@ -6,7 +6,7 @@
 /*   By: ojimenez <ojimenez@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 13:20:09 by ojimenez          #+#    #+#             */
-/*   Updated: 2024/05/16 14:25:37 by ojimenez         ###   ########.fr       */
+/*   Updated: 2024/05/16 16:55:30 by ojimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,4 +68,3 @@ int	check_string(char *s)
 		return (1);
 	return (0);
 }
-

@@ -6,7 +6,7 @@
 /*   By: ojimenez <ojimenez@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 18:44:01 by agrimald          #+#    #+#             */
-/*   Updated: 2024/05/16 16:15:52 by ojimenez         ###   ########.fr       */
+/*   Updated: 2024/05/16 16:55:50 by ojimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,6 @@ void	valid_map(t_game *game)
 	game->rows = count_rows(game->board) - 1;
 	game->columns = count_columns(game->board) - 1;
 	strtrim_map(game);
-
 	find_player(game, game->board);
 	init_aux_bool(game, &aux_bool);
 	game->open_map = padding_map_two(game, game->rows + 1, game->columns);

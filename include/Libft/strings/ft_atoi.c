@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: agrimald <agrimald@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ojimenez <ojimenez@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 12:45:24 by agrimald          #+#    #+#             */
-/*   Updated: 2024/04/25 18:54:29 by agrimald         ###   ########.fr       */
+/*   Updated: 2024/05/16 16:56:59 by ojimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,15 +35,11 @@ int	ft_atoi(char *str, int comma)
 	num = 0;
 	i = 0;
 	search_comma(str, comma, &i);
-	//while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
-	//	i++;
 	if (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')
 			sign = -1;
 		i++;
-		//if (!(str[i] >= '0' && str[i] <= '9'))
-		//	return (0);
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
