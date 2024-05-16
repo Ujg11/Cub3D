@@ -6,7 +6,7 @@
 /*   By: ojimenez <ojimenez@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 13:20:09 by ojimenez          #+#    #+#             */
-/*   Updated: 2024/05/16 13:40:05 by ojimenez         ###   ########.fr       */
+/*   Updated: 2024/05/16 14:25:37 by ojimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,24 @@ int	only_one_player(char **map, char *or)
 		i++;
 	}
 	if (flag >= 2)
+		return (1);
+	return (0);
+}
+
+int	check_string(char *s)
+{
+	int	i;
+
+	i = 1;
+	if (s[0] == ',')
+		return (1);
+	while (s[i])
+	{
+		if (s[i - 1] == ',' && s[i] == ',')
+			return (1);
+		i++;
+	}
+	if (s[i - 1] == ',' && s[i] == '\0')
 		return (1);
 	return (0);
 }

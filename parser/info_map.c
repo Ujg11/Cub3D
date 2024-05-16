@@ -6,7 +6,7 @@
 /*   By: ojimenez <ojimenez@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 17:36:50 by agrimald          #+#    #+#             */
-/*   Updated: 2024/05/06 20:31:23 by agrimald         ###   ########.fr       */
+/*   Updated: 2024/05/16 14:22:04 by ojimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,6 +80,8 @@ int	color_rgb(char *floor, char *sky, t_game *g)
 	if (check_comma(floor, sky) == 1)
 		return (1);
 	i = -1;
+	if (check_string(floor) || check_string(sky))
+		return (1);
 	while (++i < 3)
 	{
 		i_floor[i] = ft_atoi(floor, i);
@@ -96,5 +98,5 @@ void	info_map(t_game *game)
 {
 	trim_all(game);
 	if (color_rgb(game->floor, game->sky, game) == 1)
-		error_parser("INvalid floor or sky");
+		error_parser("Invalid floor or sky");
 }

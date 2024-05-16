@@ -6,7 +6,7 @@
 /*   By: ojimenez <ojimenez@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 17:18:45 by agrimald          #+#    #+#             */
-/*   Updated: 2024/05/16 13:07:49 by ojimenez         ###   ########.fr       */
+/*   Updated: 2024/05/16 14:28:58 by ojimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,13 @@
 
 void	check_xtension(char *s)
 {
-	int	i;
+	int	len;
 
-	i = 0;
-	i = ft_strlen(s) - 1;
-	if (i < 4)
+	len = ft_strlen(s);
+	if (len < 4)
 		error_parser("No hay extension bebe");
-	if (s[i - 1] != 'b' && s[i - 2] != 'u' && s[i - 3] != 'c' \
-			&& s[i - 4] == '.')
+	if (s[len - 1] != 'b' || s[len - 2] != 'u' || s[len - 3] != 'c' \
+			|| s[len - 4] != '.')
 		error_parser("Map file must have the '.cub' extension 🤕");
 }
 

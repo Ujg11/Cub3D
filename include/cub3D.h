@@ -6,7 +6,7 @@
 /*   By: ojimenez <ojimenez@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 14:06:46 by agrimald          #+#    #+#             */
-/*   Updated: 2024/05/16 13:41:31 by ojimenez         ###   ########.fr       */
+/*   Updated: 2024/05/16 14:16:46 by ojimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -133,6 +133,7 @@ int		padding_map_two(t_game *game, int rows, int cols);
 
 char	**allocate_expanded_map(int rows, int cols);
 int		only_one_player(char **map, char *or);
+int		check_string(char *s);
 
 /*****************************************************
  *					  VALID_MAP						 *

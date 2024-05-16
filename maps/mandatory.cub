@@ -3,8 +3,8 @@ SO ./textures/Textura_mosaico.xpm
 WE ./textures/Textura_piedra.xpm
 EA ./textures/Textura_lava.xpm
 
-F 140, 65, 60
-C 40, 100, 200
+F 34, 55, 23
+C 83, 66, 40
 
         111111111111111111111111111
         1000000000110000000000001111

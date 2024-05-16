@@ -6,7 +6,7 @@
 /*   By: ojimenez <ojimenez@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/26 12:42:54 by ojimenez          #+#    #+#             */
-/*   Updated: 2024/05/07 12:31:46 by ojimenez         ###   ########.fr       */
+/*   Updated: 2024/05/16 15:50:03 by ojimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,18 +23,15 @@ void	put_first_img(t_cub *c)
 	void	*img;
 	int		w;
 	int		h;
-	char	*init;
 
 	w = S_WIDTH;
 	h = S_HEIGHT;
-	init = "PRESS ANY KEY TO START";
 	img = mlx_xpm_file_to_image(c->mlx->mlx_ptr,
-			"raytracing/imatge_inicial.xpm", &w, &h);
+			"raytracing/Foto_panas.xpm", &w, &h);
 	if (img != NULL)
 	{
 		mlx_put_image_to_window(c->mlx->mlx_ptr, c->mlx->win, img, 0, 0);
 		mlx_destroy_image(c->mlx->mlx_ptr, img);
-		mlx_string_put(c->mlx->mlx_ptr, c->mlx->win, 870, 1050, 0xFFFFFF, init);
 	}
 }
 

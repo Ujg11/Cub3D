@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   check_coordinates.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: agrimald <agrimald@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ojimenez <ojimenez@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 15:59:54 by agrimald          #+#    #+#             */
-/*   Updated: 2024/05/06 20:29:16 by agrimald         ###   ########.fr       */
+/*   Updated: 2024/05/16 14:04:38 by ojimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ void	f_c(t_game *game, char *gam)
 		if (game->floor == NULL)
 			game->floor = ft_substr(gam, i + 2, ft_strlen(gam));
 		else
-			error_parser("AAAAA");
+			error_parser("AAAAAAAA");
 		game->coordinates += 1;
 	}
 	else if (gam[i] == 'C' && gam[i + 1] == ' ')
